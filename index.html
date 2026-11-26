@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ОТПрактика — аутсорсинг охраны труда дистанционно по всей России</title>
+<meta name="description" content="Аутсорсинг охраны труда для ИП и малого бизнеса по всей России: документы, обучение, СОУТ, подготовка к проверке ГИТ. Дистанционно, первый аудит бесплатно.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,'Segoe UI',Roboto,sans-serif;color:#22303f;line-height:1.6;background:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:14px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:20px;color:#e8590c}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:#22303f;text-decoration:none;font-size:15px}
+.btn{display:inline-block;background:#e8590c;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700;border:none;cursor:pointer;font-size:16px}
+.btn2{display:inline-block;background:#25d366;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700;font-size:16px}
+.hero{background:linear-gradient(135deg,#1a2332,#2c3e50);color:#fff;padding:70px 0 50px}
+.badge{display:inline-block;background:rgba(232,89,12,.2);border:1px solid #e8590c;color:#ffb27d;padding:6px 14px;border-radius:20px;font-size:14px;margin-bottom:18px}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin-bottom:16px}
+.hero p{max-width:720px;font-size:17px;opacity:.92;margin-bottom:26px}
+.stats{display:flex;gap:30px;flex-wrap:wrap;margin-top:34px}
+.stats b{font-size:26px;color:#ffb27d;display:block}
+.stats span{font-size:14px;opacity:.8}
+section{padding:56px 0}
+h2{font-size:clamp(24px,4vw,32px);margin-bottom:24px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{border:1px solid #e6e9ee;border-radius:12px;padding:22px;background:#fff}
+.card h3{font-size:18px;margin-bottom:8px}
+.price{color:#e8590c;font-weight:800;margin-top:10px}
+.red{background:#fdf0ec;border-color:#f5c6b8}
+.banner{background:#e8590c;color:#fff;border-radius:14px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.banner .btn{background:#fff;color:#e8590c}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.why b{display:block;font-size:17px;margin-bottom:6px}
+.num{color:#e8590c;font-weight:800}
+.steps{counter-reset:s}
+.step{margin-bottom:18px;padding-left:44px;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;background:#e8590c;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:start}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.about ul{margin:14px 0 0 18px}
+.photo img{width:100%;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details{border:1px solid #e6e9ee;border-radius:10px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+form{max-width:520px}
+input,select{width:100%;padding:12px;border:1px solid #cfd6de;border-radius:8px;margin-bottom:12px;font-size:16px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#5a6572;margin-bottom:14px}
+.chk input{width:auto;margin:0}
+footer{background:#1a2332;color:#cfd6de;padding:30px 0;font-size:14px}
+footer a{color:#ffb27d}
+.fab{position:fixed;right:18px;bottom:18px;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:9}
+.note{font-size:13px;color:#5a6572;margin-top:10px}
+.upl{border:2px dashed #e8590c;border-radius:12px;padding:30px;text-align:center;cursor:pointer;color:#e8590c;font-weight:700;background:#fff8f5;margin-bottom:22px}
+.upl:hover{background:#fdeee6}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.gal .item{position:relative;border:1px solid #e6e9ee;border-radius:10px;overflow:hidden;background:#fff}
+.gal img{width:100%;display:block}
+.gal .del{position:absolute;top:6px;right:6px;width:26px;height:26px;background:rgba(0,0,0,.6);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:14px;line-height:1}
+.gal .dt{font-size:11px;color:#5a6572;padding:6px 8px}
+.wa{display:inline-block;background:#25d366;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<div class="logo">ОТПрактика</div>
+<nav><a href="#uslugi">Услуги</a><a href="#pochemu">Почему ко мне</a><a href="#otzyvy">Отзывы</a><a href="#kak">Как работаем</a><a href="#obo">Обо мне</a><a href="#zayavka">Контакты</a></nav>
+<a class="btn" href="tel:+79034618365">8 903 461 83 65</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<span class="badge">🛡 Практик со строительных объектов и опасного производства, а не теоретик</span>
+<h1>Охрана труда под ключ для вашего бизнеса — без штрафов и простоев</h1>
+<p>Веду охрану труда для ИП и компаний по всей России — дистанционно, с выездом на объект только при необходимости. Разрабатываю документы, готовлю к проверкам ГИТ, обучаю персонал. Сама работала на строительных объектах и на опасном производственном объекте — знаю, как требования выглядят в реальности, а не только в бумагах.</p>
+<a class="btn" href="#zayavka">Бесплатный аудит охраны труда</a>
+<a class="btn2" href="https://wa.me/79034618365?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%20%D1%82%D1%80%D1%83%D0%B4%D0%B0">Написать в WhatsApp</a>
+<div class="stats">
+<div><b>0 ₽</b><span>стоимость первого аудита</span></div>
+<div><b>3–5 дней</b><span>полный пакет документов</span></div>
+<div><b>24/7</b><span>связь на время договора</span></div>
+</div>
+</div></section>
+
+<section class="wrap"><h2>Что будет, если охраной труда не заниматься</h2>
+<div class="grid3">
+<div class="card red"><h3>Штраф до 80 000 ₽</h3><p>За необученного работника или отсутствующий пакет документов по ОТ — штрафы начисляются за каждого работника отдельно.</p></div>
+<div class="card red"><h3>Остановка работ</h3><p>Инспектор имеет право приостановить деятельность до 90 суток. Для подрядчика на объекте это потеря контракта.</p></div>
+<div class="card red"><h3>Ответственность за несчастный случай</h3><p>Без обученных работников и инструктажей вся ответственность — на работодателе, вплоть до уголовной.</p></div>
+</div>
+<br><div class="banner"><b>Не ждите проверки — узнайте свои риски заранее. Первый аудит — бесплатно.</b><a class="btn" href="#zayavka">Записаться на аудит</a></div>
+</section>
+
+<section class="wrap" id="uslugi"><h2>Услуги и цены</h2>
+<p class="note" style="margin-bottom:20px">Все услуги оказываются дистанционно — неважно, в каком городе вы находитесь.</p>
+<div class="grid3">
+<div class="card"><h3>🛠 Аутсорсинг охраны труда</h3><p>Полное ведение ОТ: документы, инструктажи, планирование, сопровождение проверок, консультации 24/7. Ваша компания — как со штатным специалистом.</p><div class="price">от 3 000 ₽/мес — для компаний до 10 чел.</div></div>
+<div class="card"><h3>📄 Разработка пакета документов</h3><p>СУОТ, приказы, инструкции, программы обучения, журналы, перечни СИЗ — под ваш профиль деятельности, а не шаблон «для всех».</p><div class="price">от 8 000 ₽ — разовая работа</div></div>
+<div class="card"><h3>🔍 Аудит и подготовка к проверке ГИТ</h3><p>Проверю ваш бизнес как инспектор: найду слабые места и устрою их до визита ГИТ. Аудит провожу дистанционно — по документам, фото и видео с объекта; выезд — при необходимости. Работаю и с уже полученными предписаниями.</p><div class="price">от 5 000 ₽</div></div>
+<div class="card"><h3>🎓 Обучение и инструктажи</h3><p>Организую обучение по ОТ, оформление групп и ведение реестра обученных лиц. Все требования по Постановлению № 2464.</p><div class="price">от 1 500 ₽/чел.</div></div>
+<div class="card"><h3>📊 СОУТ — организация</h3><p>Организация спецоценки условий труда: от подбора организации-эксперта до внесения результатов в ФГИС СОУТ.</p><div class="price">от 2 000 ₽/рабочее место</div></div>
+<div class="card"><h3>💬 Консультация</h3><p>Разберу вашу ситуацию: что требуется по закону, что делать с предписанием, как не попасть на штраф.</p><div class="price">бесплатно — первая консультация</div></div>
+</div></section>
+
+<section class="wrap" id="pochemu" style="background:#f7f9fb"><h2>Почему ко мне идут</h2>
+<p class="note" style="margin-bottom:20px">Клиенты приходят из разных городов и регионов — и остаются, потому что сервис одинаково доступен и в Ростове, и в Москве, и в других городах.</p>
+<div class="why">
+<div class="card"><span class="num">1</span><b>Реальный производственный опыт</b>Работала на строительных объектах и на опасном производственном объекте (элеватор). Понимаю требования промышленной безопасности, а не только ТК РФ.</div>
+<div class="card"><span class="num">2</span><b>Документы под ваш бизнес</b>Не копирую шаблоны из интернета. Каждая инструкция и программа — под ваши процессы. Инспектор такое отличает сразу.</div>
+<div class="card"><span class="num">3</span><b>Доступ на связи всегда</b>Предпринимателю часто нужно спросить «а как правильно вот тут?» — не за деньги и не через неделю. Весь сервис работает удалённо: звонок, мессенджер, видеосвязь.</div>
+<div class="card"><span class="num">4</span><b>Говорю на языке дела</b>Объясняю, что нужно сделать и зачем, — без канцелярита и ссылок на «методические рекомендации» вместо конкретики.</div>
+</div></section>
+
+<section class="wrap" id="otzyvy"><h2>Отзывы клиентов</h2>
+<p class="note" style="margin-bottom:16px">Здесь вы можете добавить фото с отзывом (скриншот переписки или скан письма). Отзывы сохраняются в этом браузере.</p>
+<label class="upl">📷 Загрузить фото отзыва<input type="file" id="revInput" accept="image/*" multiple hidden></label>
+<div class="gal" id="revGal"></div>
+<p class="note" id="revClear" style="display:none"><a href="#" onclick="clearRev();return false">Очистить все отзывы</a></p>
+</section>
+
+<section class="wrap" id="kak" style="background:#f7f9fb"><h2>Как мы работаем</h2>
+<div class="steps">
+<div class="step"><b>Знакомство и бесплатный аудит</b><br>Звонок или видеосвязь: удалённо смотрю ваши документы, что у вас есть, чего не хватает и чем вы рискуете прямо сейчас. Выезд — только если он реально нужен.</div>
+<div class="step"><b>План и предложение</b><br>Список того, что нужно сделать, с приоритетами и ценами. Без «пакетов на 100 000 ₽», в которых половина не нужна.</div>
+<div class="step"><b>Выполнение</b><br>Разрабатываю документы, организую обучение, навожу порядок в журналах. От вас — минимум времени.</div>
+<div class="step"><b>Спокойствие</b><br>На договоре аутсорсинга — ежемесячное сопровождение, контроль сроков и моя готовность помочь с инспектором — дистанционно или лично, если выезд необходим.</div>
+</div></section>
+
+<section class="wrap" id="obo"><h2>Обо мне</h2>
+<div class="about">
+<div>
+<p>Меня зовут Марина, я специалист по охране труда. Пришла в ОТ с производства: работала на строительных объектах и на элеваторе — предприятии, относящемся к опасным производственным объектам. Поэтому свои услуги я строю на понимании того, как безопасность выглядит на практике.</p>
+<p style="margin-top:12px">Помогаю малому бизнесу по всей России не платить дважды: не штрафами ГИТ и не за лишние «услуги», которых по закону не требуется. Вся работа — документы, журналы, обучение, сопровождение проверок — ведётся удалённо.</p>
+<ul>
+<li>Профильное образование / профессиональная переподготовка по ОТ</li>
+<li>Опыт на стройплощадках и предприятиях категории ОПО</li>
+<li>Работаю с ИП, микропредприятиями и подрядными организациями</li>
+<li>Работаю дистанционно по всей России</li>
+</ul>
+<p style="margin-top:16px"><b>С кем работаю чаще всего:</b></p>
+<ul>
+<li>Строительные компании и подрядчики</li>
+<li>Предприятия АПК и зерновой логистики (элеваторы, комбикормовые заводы)</li>
+<li>Производственные цеха и мастерские</li>
+<li>Торговые и сервисные компании</li>
+<li>ИП и микропредприятия до 10 человек</li>
+</ul>
+</div>
+<div class="photo"><img src="marina.jpg" alt="Марина — специалист по охране труда" onerror="this.parentNode.style.display='none'"></div>
+</div></section>
+
+<section class="wrap"><h2>Частые вопросы</h2>
+<details><summary>Мне вообще нужна охрана труда, если нас 5 человек?</summary><p>Да. Обязанности работодателя по охране труда есть у всех, включая ИП с одним работником. Разница — в объёме документов и обучении. На бесплатном аудите покажу ровно то, что требуется именно вам.</p></details>
+<details><summary>Придёт проверка ГИТ — что делать?</summary><p>Не паниковать и не подписывать всё подряд. Напишите мне — помогу подготовить документы и пояснения, сопровожу коммуникацию с инспектором. Это моя основная услуга.</p></details>
+<details><summary>Документы в электронном виде — это законно?</summary><p>Да. Трудовой кодекс (ст. 214 ТК РФ) и Постановление № 2464 прямо допускают электронное ведение документов и дистанционное обучение. Всё, что я делаю, соответствует этим нормам.</p></details>
+<details><summary>Вы в Ростове, а мы в другом городе — как работать?</summary><p>Аутсорсинг ОТ не привязан к городу: документы, консультации и обучение — дистанционно. Выезд — только там, где он действительно необходим.</p></details>
+<details><summary>Сколько стоит для компании из 7 человек?</summary><p>Аутсорсинг — от 3 000 ₽/мес, плюс разовая подготовка пакета документов. Точную сумму скажу после бесплатного аудита — без навязывания лишнего.</p></details>
+</section>
+
+<section class="wrap" id="zayavka" style="background:#f7f9fb"><h2>Запишитесь на бесплатный аудит</h2>
+<p style="margin-bottom:8px">Заполните форму — я перезвоню в течение рабочего дня. Или напишите сразу в WhatsApp: кнопка внизу.</p>
+<p class="note" style="margin-bottom:20px">Другие способы связи: <a href="https://wa.me/79034618365">WhatsApp</a>, <a href="https://max.ru/u/f9LHodD0cOLZVInppm0932HFrOMudLCQ85YQm0WwOru96z1a7WfIFzDqd3A">МАКС</a> или почта <a href="mailto:makarowa_2025@mail.ru">makarowa_2025@mail.ru</a> — отвечаю в течение рабочего дня.</p>
+<form onsubmit="send(event)">
+<input id="n" placeholder="Ваше имя">
+<input id="t" placeholder="Телефон" inputmode="tel">
+<input id="g" placeholder="Ваш город">
+<select id="c">
+<option>Аутсорсинг охраны труда</option>
+<option>Пакет документов</option>
+<option>Аудит и подготовка к ГИТ</option>
+<option>Обучение и инструктажи</option>
+<option>СОУТ</option>
+<option>Консультация</option>
+</select>
+<label class="chk"><input type="checkbox" id="s"> Согласен(на) на обработку персональных данных</label>
+<button class="btn" type="submit">Отправить заявку в WhatsApp</button>
+</form>
+<p class="note">Заявка откроется в WhatsApp с уже заполненным текстом — вам останется только нажать «отправить».</p>
+</section>
+
+<footer><div class="wrap">
+<b style="color:#fff">ОТПрактика</b> — охрана труда для бизнеса, дистанционно по всей России<br>
+Тел: <a href="tel:+79034618365">8 903 461 83 65</a> ·
+<a href="https://wa.me/79034618365">WhatsApp</a> ·
+<a href="https://max.ru/u/f9LHodD0cOLZVInppm0932HFrOMudLCQ85YQm0WwOru96z1a7WfIFzDqd3A">МАКС</a> ·
+<a href="mailto:makarowa_2025@mail.ru">makarowa_2025@mail.ru</a><br>
+© 2026. Все права защищены.
+</div></footer>
+
+<a class="fab" href="https://wa.me/79034618365?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%20%D1%82%D1%80%D1%83%D0%B4%D0%B0">💬</a>
+
+<script>
+function send(e){e.preventDefault();
+var n=document.getElementById('n').value.trim(),t=document.getElementById('t').value.trim(),g=document.getElementById('g').value.trim(),c=document.getElementById('c').value;
+if(!n||!t){alert('Заполните имя и телефон');return}
+if(!document.getElementById('s').checked){alert('Подтвердите согласие на обработку персональных данных');return}
+var m='Здравствуйте, Марина! Меня зовут '+n+'. Город: '+(g||'не указан')+'. Телефон: '+t+'. Интересует: '+c+'.';
+window.open('https://wa.me/79034618365?text='+encodeURIComponent(m),'_blank')}
+
+var KEY='otpraktika_reviews';
+function loadRev(){var g=document.getElementById('revGal');g.innerHTML='';var list=JSON.parse(localStorage.getItem(KEY)||'[]');
+list.forEach(function(r,i){var d=document.createElement('div');d.className='item';
+d.innerHTML='<img src="'+r.src+'"><div class="dt">'+r.date+'</div><button class="del" data-i="'+i+'">×</button>';
+g.appendChild(d)});
+document.getElementById('revClear').style.display=list.length?'block':'none'}
+document.getElementById('revInput').addEventListener('change',function(e){
+var files=e.target.files,list=JSON.parse(localStorage.getItem(KEY)||'[]'),done=0;
+[].forEach.call(files,function(f){var img=new Image(),rd=new FileReader();
+rd.onload=function(){img.onload=function(){
+var w=Math.min(900,img.width),h=img.height*w/img.width,cs=document.createElement('canvas');
+cs.width=w;cs.height=h;cs.getContext('2d').drawImage(img,0,0,w,h);
+list.unshift({src:cs.toDataURL('image/jpeg',0.75),date:new Date().toLocaleDateString('ru-RU')});
+done++;if(done===files.length){localStorage.setItem(KEY,JSON.stringify(list));loadRev()}};
+img.src=rd.result};rd.readAsDataURL(f)});
+e.target.value=''});
+document.getElementById('revGal').addEventListener('click',function(e){
+if(e.target.classList.contains('del')){var i=+e.target.dataset.i,list=JSON.parse(localStorage.getItem(KEY)||'[]');
+list.splice(i,1);localStorage.setItem(KEY,JSON.stringify(list));loadRev()}});
+function clearRev(){if(confirm('Удалить все отзывы из этого браузера?')){localStorage.removeItem(KEY);loadRev()}}
+loadRev();
+</script>
+</body>
+</html>
