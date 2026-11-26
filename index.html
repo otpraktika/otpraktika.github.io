@@ -113,11 +113,10 @@ footer a{color:#ffb27d}
 </div></section>
 
 <section class="wrap" id="otzyvy"><h2>Отзывы клиентов</h2>
-<p class="note" style="margin-bottom:16px">Здесь вы можете добавить фото с отзывом (скриншот переписки или скан письма). Отзывы сохраняются в этом браузере.</p>
-<label class="upl">📷 Загрузить фото отзыва<input type="file" id="revInput" accept="image/*" multiple hidden></label>
 <div class="gal" id="revGal"></div>
-<p class="note" id="revClear" style="display:none"><a href="#" onclick="clearRev();return false">Очистить все отзывы</a></p>
+<p class="note" style="margin-top:14px">Хотите такой же результат для своего бизнеса? <a href="#zayavka">Напишите мне</a>.</p>
 </section>
+
 
 <section class="wrap" id="kak" style="background:#f7f9fb"><h2>Как мы работаем</h2>
 <div class="steps">
@@ -198,27 +197,13 @@ if(!document.getElementById('s').checked){alert('Подтвердите согл
 var m='Здравствуйте, Марина! Меня зовут '+n+'. Город: '+(g||'не указан')+'. Телефон: '+t+'. Интересует: '+c+'.';
 window.open('https://wa.me/79034618365?text='+encodeURIComponent(m),'_blank')}
 
-var KEY='otpraktika_reviews';
-function loadRev(){var g=document.getElementById('revGal');g.innerHTML='';var list=JSON.parse(localStorage.getItem(KEY)||'[]');
-list.forEach(function(r,i){var d=document.createElement('div');d.className='item';
-d.innerHTML='<img src="'+r.src+'"><div class="dt">'+r.date+'</div><button class="del" data-i="'+i+'">×</button>';
-g.appendChild(d)});
-document.getElementById('revClear').style.display=list.length?'block':'none'}
-document.getElementById('revInput').addEventListener('change',function(e){
-var files=e.target.files,list=JSON.parse(localStorage.getItem(KEY)||'[]'),done=0;
-[].forEach.call(files,function(f){var img=new Image(),rd=new FileReader();
-rd.onload=function(){img.onload=function(){
-var w=Math.min(900,img.width),h=img.height*w/img.width,cs=document.createElement('canvas');
-cs.width=w;cs.height=h;cs.getContext('2d').drawImage(img,0,0,w,h);
-list.unshift({src:cs.toDataURL('image/jpeg',0.75),date:new Date().toLocaleDateString('ru-RU')});
-done++;if(done===files.length){localStorage.setItem(KEY,JSON.stringify(list));loadRev()}};
-img.src=rd.result};rd.readAsDataURL(f)});
-e.target.value=''});
-document.getElementById('revGal').addEventListener('click',function(e){
-if(e.target.classList.contains('del')){var i=+e.target.dataset.i,list=JSON.parse(localStorage.getItem(KEY)||'[]');
-list.splice(i,1);localStorage.setItem(KEY,JSON.stringify(list));loadRev()}});
-function clearRev(){if(confirm('Удалить все отзывы из этого браузера?')){localStorage.removeItem(KEY);loadRev()}}
-loadRev();
+var REV=['otzyv1.jpg','otzyv2.jpg','otzyv3.jpg'];
+var RG=document.getElementById('revGal');
+REV.forEach(function(f){var d=document.createElement('div');d.className='item';
+d.innerHTML='<img src="'+f+'" alt="Отзыв клиента">';
+RG.appendChild(d)});
+if(!REV.length){RG.innerHTML='<p class="note">Отзывы скоро появятся.</p>'}
+
 </script>
 </body>
 </html>
